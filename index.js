@@ -15,7 +15,8 @@ app.set('view engine', 'html');
 
 
 app.get('/', (req, res) => {
-   res.render('index', {title: "Welcome", error: null});
+   //res.render('index', {title: "Welcome", error: null});
+   res.send('Home Page Route');
 })
 
 app.listen(port, () => {
